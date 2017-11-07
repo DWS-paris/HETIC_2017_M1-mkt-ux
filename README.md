@@ -1,1 +1,1 @@
-# Supports de cours : M1 Marketing/UX #hetic2017
+# Supports de cours : Techno. FrontEnd
