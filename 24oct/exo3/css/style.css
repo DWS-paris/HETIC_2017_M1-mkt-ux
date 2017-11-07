@@ -1,0 +1,88 @@
+/* Centrer le texte de toute la page */
+body{
+    text-align: center;
+
+    /* Ajouter une image de fond */
+    background-image: url('../img/back.png');
+
+    /* Modifier la répétition */
+    background-repeat: no-repeat;
+
+    /* Positionner l'image de fond */
+    background-position: center;
+
+    /* Changer la taille de l'image de fond */
+    background-size: 100%;
+}
+
+
+/* Sélecteur par classe : préfixe . */
+.contentSection{
+    border-bottom: 5px solid black;
+}
+
+.myTitle{
+    color: yellow;
+}
+
+/* Sélecteur par ID : préfixe # */
+#pageTitle{
+    color: blue;
+}
+
+/* Sélecteur logique : nom de la balise HTML */
+h1, h2{
+    color: red;
+}
+
+h1{
+    color: green;
+}
+
+/* Sélecteur imbriqué */
+h1 i{
+    text-decoration: underline;
+}
+
+/* Sélecteur d'interaction */
+a:hover{
+    color: #ab5a32;
+}
+
+/* Changer la couleur de fond du header */
+header{
+    background-color: #365aa5;
+}
+
+nav{
+    /* Utiliser la référence RGBA : A pour opacité */
+    background-color: rgba(255, 255, 255, .5);
+}
+
+p{
+    /* Changer la taille de la police */
+    font-size: 20px;
+
+    /* Changer l'épaisseur de la police */
+    font-weight: bold;
+
+    /* Changer le style de la police */
+    font-style: italic;
+
+    /* Changer l'interlignage de la police */
+    line-height: 1.5;
+
+    /* Changer linterlettrage */
+    letter-spacing: 1px;
+
+    /* Changer la police de caractère */
+    font-family: 'Arial', sans-serif;
+}
+
+h1{
+    /* Passer le texte en majuscule */
+    text-transform: uppercase;
+
+    /* Ajouter une ombre portée */
+    text-shadow: 5px 5px 5px black;
+}

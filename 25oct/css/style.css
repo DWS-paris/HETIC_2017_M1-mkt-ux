@@ -1,0 +1,106 @@
+/*base css*/
+html,body{
+	font: 16px sans-serif;
+	margin:0;
+	background: #fafafa;
+}
+h1,/*agencement ou contexte css*/
+h2,
+h3,
+p,
+figure,ul{
+	margin:0;
+	font-weight: lighter;
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	color: #222;
+	text-decoration: none;
+}
+/*thème page globale*/
+header{
+	background: #212121;
+}
+header h1{
+	text-align: center;
+	line-height: 60px;
+	color: #fafafa;
+}
+main{
+	margin:20px 0;
+}
+/*module*/
+section{
+	width: 700px;
+	border: solid 1px transparent;
+	box-shadow: 0 0 10px #222;
+	margin:0 auto;/*centre le block dans la page*/
+	
+}
+section h2{
+	background: rgba(200,0,0,0.8);
+	text-align: center;
+	color: #fafafa;
+	line-height: 60px;
+}
+figure{
+	background: rgb(0,200,0);
+}
+figure img{
+	display: block;
+	max-width: 100%;
+	opacity: 0.9;
+}
+figcaption{
+	background: #fff;/*couleur figcaption*/
+}
+figcaption p{
+	padding:10px;
+}
+figcaption h3{
+	background: rgba(0,0,200,0.9);
+	text-align: center;
+	color: #fff;
+	line-height: 60px;
+}
+/*css event*/
+.btn{/*a type inline*/
+	display: block;
+	background: rgba(0,0,200,0.9);
+	width:100%;
+	line-height: 60px;
+	text-align: left;
+	color: #fff;
+	margin-top:10px;
+	border-radius: 3px;
+	padding-left: 10px;
+	transition: 0.5s ease-in-out;
+}
+.btn:hover{
+	
+	
+	padding-left: 20px;
+}
+footer{
+	width: 700px;
+	padding:0;
+	margin:10px auto;
+	border-top: solid 1px #ccc;
+}
+footer ul{
+	list-style: none;
+	padding:0;
+	background: rgba(0,0,150,0.8);
+	line-height: 35px;
+}
+footer ul li{
+	padding-left: 5px;
+	margin-bottom: 1px;
+	background: rgba(0,0,190,0.8);
+	color: #fff;
+}
+details summary{
+	padding-top:10px;
+}

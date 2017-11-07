@@ -1,0 +1,19 @@
+/* 
+    - Une bordure sur les items de la liste
+*/
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    border: 5px solid black;
+
+    /* Marge ext. */
+    margin: 20px;
+
+    /* Marge Int. */
+    padding: 10px;
+}

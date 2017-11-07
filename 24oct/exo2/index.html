@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Caractères spéciaux -->
+        <meta charset="UTF-8">
+        <!-- Configurer le Responsive Design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exo2 les balises HTML</title>
+    </head>
+    <body>
+
+        <!-- Les titres en HTML h1 à h6 -->
+        <h1><i>Titre principal</i>, balise unique</h1>
+        <h2>Sous-titre</h2>
+        <h3>Sous-sous-titre</h3>
+
+        <!-- Ajouter un paragraphe -->
+        <p>Lorem ipsum <b>dolor sit amet consectetur</b> adipisicing elit. <strong>Pariatur ipsum aliquam</strong> quod voluptate, iusto nulla sit voluptates cumque. <i>Fugiat omnis aperiam totam</i> vero numquam dolorem autem laboriosam impedit ab consequatur!</p>
+
+        <!-- Ajouter une image -->
+        <img src="./img/atelier.png" alt="Photo d'un atelier" width="200">
+
+        <!-- Créer une liste numérotée -->
+        <ol>
+            <li>ARPANET</li>
+            <li>TCP-IP</li>
+            <li>Internet</li>
+            <li>Sir Tim Berners Lee</li>
+        </ol>
+
+        <!-- Créer une liste à puces -->
+        <ul>
+            <li>Html.1 à 3</li>
+            <li>XHTML = html + xml</li>
+            <li>HTML.5</li>
+        </ul>
+
+        <!-- Créer un lien vers une page Web -->
+        <a href="http://google.fr" target="_blank">Lien vers Google</a>
+
+        <!-- Tableau HTML -->
+        <table>
+
+            <!-- Ajouter un titre #option -->
+            <caption>Mon super tableau</caption>
+
+            <!-- Ajouter une ligne pour le header #option -->
+            <tr>
+                <th>Skills</th>
+                <th>Niveau sur 5</th>
+                <th>Expérience</th>
+            </tr>
+
+            <!-- Ajouter une ligne pour les données -->
+            <tr>
+                <td>HTML</td>
+                <td>5</td>
+                <td>18 ans</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>4.5</td>
+                <td>18 ans</td>
+            </tr>
+            <tr>
+                <!-- Faire une colonne triple -->
+                <td colspan="3">DJing de 1997 à 2005</td>
+            </tr>
+        </table>
+
+        <!-- Formulaire HTML -->
+        <form action="connexion.php">
+
+            <label for="username">Votre identifiant</label>
+            <input type="text" name="username" placeholder="Nom complet" required >
+
+            <label for="userPassword">Votre mot de passe</label>
+            <input type="password" name="userPassword" required >
+
+            <label for="userEmail">Votre email</label>
+            <input type="email" name="userEmail" minlength="4">
+
+            <!-- Ajouter une zone pour un message -->
+            <label for="userMessage">Votre message</label>
+            <textarea name="userMessage" disabled ></textarea>
+
+            <!-- Ajouter un menu déroulant -->
+            <label for="userSubject">Sujet du message</label>
+            <select name="userSubject">
+                <option value="null" disabled selected >- Sélectionner -</option>
+                <option value="subject2">Problème de connexion</option>
+                <option value="subject3">Autre demande</option>
+            </select>
+
+            <!-- Ajouter des boutons de type radio -->
+            <label for="userLang">Langue parlée</label>
+            <input type="radio" name="userLang" value="FR"> Français
+            <input type="radio" name="userLang" value="IT"> Italien
+            <input type="radio" name="userLang" value="EN"> Anglais
+
+            <!-- Ajouter des checkboxes -->
+            <label>Heure de contact</label>
+            <input type="checkbox" name="userConnexion" value="matin" checked > Matin
+            <input type="checkbox" name="userConnexion" value="Soir"> Soir
+            
+
+            <!-- Ajouter un bouton pour valider le formulaire -->
+            <button type="submit">Connexion</button>
+
+        </form>
+        
+    </body>
+</html>

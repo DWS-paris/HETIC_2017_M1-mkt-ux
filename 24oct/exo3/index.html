@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exo3</title>
+
+        <!-- 
+            Ajouter du style dans la balise head
+            <style>
+                h1, h2{
+                    color: red;
+                }
+            </style>
+        -->
+
+        <!-- Intégrer une feuille de style -->
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+
+    <body>
+        <!-- Ouverture de page : header -->
+        <header>
+            <!-- Navigation principale -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenu principal -->
+        <main>
+
+            <!-- Définir une zone dans le main (ou le header, ou le footer) -->
+            <section class="contentSection">
+                <!-- 
+                    Ajouter du style directement sur la balise (tag) 
+                    <h1 style="color: red">My First WebPage</h1>
+                -->
+
+                <h1 id="pageTitle" class="myTitle">My First <i>WebPage</i></h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+
+            <section class="contentSection">
+                <h2>Formulaire de contact</h2>
+                <form action="#">
+                    <label for="username">Nom</label>
+                    <input type="text" name="username" required placeholder="Nom complet">
+
+                    <label for="userEmail">Email</label>
+                    <input type="email" name="userEmail" required placeholder="Min 3 caract.">
+
+                    <label for="userMessage">Message</label>
+                    <textarea name="userMessage"></textarea>
+
+                    <!-- 
+                        Validation du formulaire
+                        <input type="submit">
+                    -->
+                    <button type="submit">Envoyer</button>
+                    
+                </form>
+            </section>
+        </main>
+
+        <!-- Fermeture de la page -->
+        <footer>
+            <p><b>Under MIT Licence</b></p>
+        </footer>
+    </body>
+</html>
