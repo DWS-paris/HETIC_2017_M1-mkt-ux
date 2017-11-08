@@ -93,9 +93,10 @@ HEADER
         /* Changer le type de balise */
         display: block;
         width: 4rem;
+        padding-top: 2rem;
     }
 
-    nav{
+    nav, section{
         /* Définir la largeur max de la nav */
         max-width: 80rem;
 
@@ -129,5 +130,67 @@ HEADER
 
         top: 2rem;
         right: 2rem;
+    }
+/**/
+
+
+/* 
+MAIN
+*/
+    section{
+        margin-bottom: 15rem;
+        padding-top: 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    main ul{
+        max-width: 30rem;
+        margin: auto;
+    }
+
+    main li {
+        margin-bottom: 1rem;
+    }
+
+    .callToAction {
+        font-size: 1.8rem;
+        color: black;
+        background-color: #eea136;
+        padding: 1rem;
+        margin-top: 1rem;
+        display: inline-block;
+        border-bottom: .5rem solid #b77d2c;
+    }
+
+    figure {
+        display: inline-block;
+        width: 30%;
+        border: 1rem solid #131313;
+
+        /* Bloquer les enfants dans le parent */
+        position: relative;
+    } 
+
+    figcaption {
+        background-color: rgba(0, 0, 0, .5);
+        width: 45%;
+        padding: 1rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    figcaption span{
+        background-color: black;
+        display: block;
     }
 /**/
