@@ -21,10 +21,50 @@ Reset
 
     body{
         font-size: 1.5rem; /* => 15px */
+        font-family: serif;
+        color: white;
+        background-color: #131313;
     }
 
     /* Faire en sorte que les images ne soient jamais plus grandes que leur parent */
     img{
         max-width: 100%;
+    }
+
+    h1, h2, h3{
+        font-family: 'Arial', sans-serif;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+/**/
+
+
+/* 
+HEADER
+*/
+    header{
+        /* Ajouter une image de fond */
+        background-image: url('../img/background.jpg');
+        
+        /* Gérer la taille de l'image de fond */
+        background-size: 100%; /* => 100% de la largeur de HEADER */
+
+        /* Gérer la répétition de l'image de fond */
+        background-repeat: no-repeat;
+
+        /* Faire en sorte que le HEADER fasse la hauteur de la fenêtre */
+        height: 100vh;
+    }
+
+    #siteLogo{
+        /* Changer le type de balise */
+        display: block;
+        width: 4rem;
     }
 /**/
