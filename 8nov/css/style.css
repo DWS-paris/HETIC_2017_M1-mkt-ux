@@ -22,6 +22,7 @@ Reset
     body{
         font-size: 1.5rem; /* => 15px */
         font-family: serif;
+        text-align: center;
         color: white;
         background-color: #131313;
     }
@@ -33,10 +34,12 @@ Reset
 
     h1, h2, h3{
         font-family: 'Arial', sans-serif;
+        text-transform: uppercase;
     }
 
     a{
         text-decoration: none;
+        color: inherit;
     }
 
     ul{
@@ -60,11 +63,71 @@ HEADER
 
         /* Faire en sorte que le HEADER fasse la hauteur de la fenêtre */
         height: 100vh;
+
+        /* Bloquer les balises enfants dans le HEADER */
+        position: relative;
+    }
+
+    h1{
+        font-size: 5rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    h1 span{
+        font-size: .5em;
+        font-family: serif;
+        font-weight: 100;
+
+        /* Changer le type de balise pour faire passer le SPAN à la ligne */
+        display: block;
     }
 
     #siteLogo{
         /* Changer le type de balise */
         display: block;
         width: 4rem;
+    }
+
+    nav{
+        /* Définir la largeur max de la nav */
+        max-width: 80rem;
+
+        /* Centrer dans la largeur une balise BLOCK réduite */
+        margin: auto;
+    }
+
+    nav ul{
+        /* Sortir la balise du flux pour la figer en haut à droite */
+        position: fixed;
+        top: 0;
+        right: -13.5rem;
+
+        height: 100vh;
+        padding: 4rem;
+        background-color: #131313;
+    }
+
+    nav button{
+        font-size: 2rem;
+        color: white;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, .5);
+        border: none;
+
+        /* Sortir la balise du flux pour la figer en haut à droite */
+        position: fixed;
+
+        /* Gestion de l'ordre des balises */
+        z-index: 1;
+
+        top: 2rem;
+        right: 2rem;
     }
 /**/
