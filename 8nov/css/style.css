@@ -1,0 +1,30 @@
+/* 
+Reset
+*/
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    *{
+        /* Supprimer toutes les marges */
+        margin: 0;
+        padding: 0;
+
+        /* Intégrer les bordure et les padding dans la taille de balise (bloc/boite) */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /* Ramener la valeur 1rem à 10px */
+    html{
+        font-size: 62.5%; /* => 10px = 1rem */
+    }
+
+    body{
+        font-size: 1.5rem; /* => 15px */
+    }
+
+    /* Faire en sorte que les images ne soient jamais plus grandes que leur parent */
+    img{
+        max-width: 100%;
+    }
+/**/
